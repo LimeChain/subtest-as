@@ -35,7 +35,7 @@ export function newMockCallWithIO(inputParams: Array<ethereum.EventParam>, outpu
   return new ethereum.Call(defaultAddress, defaultAddress, newBlock(), newTransaction(), inputParams, outputParams);
 }
 
-function newBlock(): ethereum.Block {
+export function newBlock(): ethereum.Block {
     return new ethereum.Block(defaultAddressBytes, defaultAddressBytes, defaultAddressBytes, defaultAddress,
     defaultAddressBytes, defaultAddressBytes, defaultAddressBytes, defaultBigInt, defaultBigInt,
     defaultBigInt, defaultBigInt, defaultBigInt, defaultBigInt, defaultBigInt, defaultBigInt);
